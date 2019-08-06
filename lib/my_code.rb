@@ -61,7 +61,7 @@ def reduce_to_total(array, initializer = 0)
 return value + initializer
 end
 
-
+=begin
 def reduce_to_all_true(array)
   
   i = 0 
@@ -77,22 +77,18 @@ def reduce_to_all_true(array)
   return true
 
 end
-
-=begin
-def i_hear_a_sick_sound(passengers_sounds)
-  i = 0 # set up a i for the enumeration of the passengers collection
-  while i < passengers_sounds.length do # a loop for each passenger
-    # Stop enumerating and return true if any passenger is
-    # coughing or sneezing
-    if (passengers_sounds[i] == "coughing" || passengers_sounds[i] == "sneezing")
-      return true
-    end
-    i += 1
-  end
-  return false
-end
 =end
+def reduce_all_to_true(array)
+  
+  array.each do |i|
+    if i == false
+      return false
+    end
+  end
+  
+  return true
 
+end
 
 
 
