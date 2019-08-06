@@ -75,6 +75,7 @@ def reduce_to_all_true(array)
     end
   counter += 1 
   end
+  end
 
 end
 
