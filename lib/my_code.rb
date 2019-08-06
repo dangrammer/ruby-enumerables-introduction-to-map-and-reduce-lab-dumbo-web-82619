@@ -61,7 +61,7 @@ def reduce_to_total(array, initializer = 0)
 return value + initializer
 end
 
-=begin
+
 def reduce_to_all_true(array)
   
   i = 0 
@@ -77,21 +77,6 @@ def reduce_to_all_true(array)
   return true
 
 end
-=end
-def reduce_all_to_true(array)
-  
-  i = 0
-  
-  array.each do |i|
-    if i == false
-      return false
-    end
-  end
-  
-  return true
-
-end
-
 
 
 
