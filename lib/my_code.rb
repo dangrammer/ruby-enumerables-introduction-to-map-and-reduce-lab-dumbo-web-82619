@@ -64,18 +64,17 @@ end
 
 def reduce_to_all_true(array)
   
-  counter = 0 
+  i = 0 
   
-  while counter < array.length do 
-    while array[counter] = true 
-      return true
-      break
-    unless array[counter] = false
+  while i < array.length do
+    
+    if array[i] == false 
       return false
     end
-  counter += 1 
+    i += 1
   end
-  end
+  
+  return true
 
 end
 
