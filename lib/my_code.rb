@@ -64,14 +64,18 @@ end
 
 def reduce_to_all_true(array)
   
-  array.each do |i|
-    return true
-    until i == false
-    then
-     return false
-    end
-  end
+  counter = 0 
   
+  while counter < array.length do 
+    while array[counter] = true 
+      return true
+      break
+    unless array[counter] = false
+      return false
+    end
+  counter += 1 
+  end
+
 end
 
 =begin
