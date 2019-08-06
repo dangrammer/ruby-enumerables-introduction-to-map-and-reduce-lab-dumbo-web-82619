@@ -94,15 +94,3 @@ def reduce_to_any_true(array)
   return false
   
 end
-      
-  
-
-
-  
-  
-  
-  
-  
-  
-  
-  
