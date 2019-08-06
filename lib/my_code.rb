@@ -64,15 +64,38 @@ end
 
 def reduce_to_all_true(array)
   
-  value = "True"
-  
-  if array.each == true
-    puts value
-  else
-    puts "False" 
+  array.each do |i|
+    if array[i] == true
+      return "True"
+    end
   end
   
+  return "False"
+  
 end
+
+=begin
+def i_hear_a_sick_sound(passengers_sounds)
+  i = 0 # set up a i for the enumeration of the passengers collection
+  while i < passengers_sounds.length do # a loop for each passenger
+    # Stop enumerating and return true if any passenger is
+    # coughing or sneezing
+    if (passengers_sounds[i] == "coughing" || passengers_sounds[i] == "sneezing")
+      return true
+    end
+    i += 1
+  end
+  return false
+end
+=end
+
+
+
+
+
+
+
+
 
 
 def reduce_to_any_true(array)
