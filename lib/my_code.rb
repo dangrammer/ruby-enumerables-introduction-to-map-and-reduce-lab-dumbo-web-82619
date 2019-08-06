@@ -65,10 +65,10 @@ end
 def reduce_to_all_true(array)
   
   array.each do |i|
-    if array[i] == true
-      return "True"
-    elsif array[i] == false 
+    if i == false
       return "False"
+    else 
+      return "True"
     end
   end
   
