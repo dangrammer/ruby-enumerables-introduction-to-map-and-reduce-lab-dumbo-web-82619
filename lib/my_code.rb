@@ -80,6 +80,8 @@ end
 =end
 def reduce_all_to_true(array)
   
+  i = 0
+  
   array.each do |i|
     if i == false
       return false
