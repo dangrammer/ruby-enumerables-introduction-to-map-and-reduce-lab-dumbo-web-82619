@@ -1,10 +1,10 @@
 def map_to_negativize(array)
   
-  counter = 0 
+  i = 0 
   
-  while counter < array.length do 
-  array[counter] = array[counter] * -1  
-  counter += 1 
+  while i < array.length do 
+  array[i] = array[i] * -1  
+  i += 1 
   end
   
   return array
@@ -13,11 +13,11 @@ end
 
 def map_to_no_change(array)
   
-  counter = 0 
+  i = 0 
   
-  while counter < array.length do 
-  array[counter] = array[counter] 
-  counter += 1 
+  while i < array.length do 
+  array[i] = array[i] 
+  i += 1 
   end
   
   return array
@@ -28,9 +28,9 @@ def map_to_double(array)
   
   i = 0 
   
-  while counter < array.length do 
-  array[counter] = array[counter] * 2  
-  counter += 1 
+  while i < array.length do 
+  array[i] = array[i] * 2  
+  i += 1 
   end
   
   return array
@@ -81,6 +81,17 @@ end
 
 def reduce_to_any_true(array)
   
+  i = 0 
+  
+  while i < array.length do
+    
+    if array[i] == true 
+      return true
+    end
+    i += 1
+  end
+  
+  return false
   
 end
       
