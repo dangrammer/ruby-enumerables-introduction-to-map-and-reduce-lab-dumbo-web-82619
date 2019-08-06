@@ -65,9 +65,9 @@ end
 def reduce_to_all_true(array)
   
   array.each do |i|
-    return "True"
+    return true
     until i == false
-    return "False"
+    return false
     end
   end
   
