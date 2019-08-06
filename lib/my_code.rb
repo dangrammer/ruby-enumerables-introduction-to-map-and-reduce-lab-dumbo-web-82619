@@ -26,7 +26,7 @@ end
 
 def map_to_double(array)
   
-  counter = 0 
+  i = 0 
   
   while counter < array.length do 
   array[counter] = array[counter] * 2  
@@ -39,11 +39,11 @@ end
 
 def map_to_square(array)
   
-  counter = 0 
+  i = 0 
   
-  while counter < array.length do 
-  array[counter] = array[counter] ** 2  
-  counter += 1 
+  while i < array.length do 
+  array[i] = array[i] ** 2  
+  i += 1 
   end
   
   return array
@@ -79,13 +79,9 @@ def reduce_to_all_true(array)
 end
 
 
-
-
-
-
-
-
 def reduce_to_any_true(array)
+  
+  
 end
       
   
